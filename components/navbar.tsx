@@ -12,7 +12,6 @@ import { cn } from "@/lib/utils"
 
 export default function Navbar() {
   const pathname = usePathname()
-  const router = useRouter()
   const [isMobile, setIsMobile] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -23,10 +22,10 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", checkMobile)
   }, [])
 
-  // ✅ Close sidebar automatically when route changes
+  // ✅ Close sidebar when route changes
   useEffect(() => {
     setOpen(false)
-  }, [pathname]) // 🔹 Runs whenever pathname changes
+  }, [pathname])
 
   const routes = [
     { href: "/", label: "Home" },
@@ -62,16 +61,17 @@ export default function Navbar() {
               <SheetContent side="right">
                 <nav className="grid gap-4 py-6">
                   {routes.map((route) => (
-                    <button
+                    <Link
                       key={route.href}
-                      onClick={() => router.push(route.href)}
+                      href={route.href}
+                      onClick={() => setTimeout(() => setOpen(false), 100)} // ✅ Ensures menu closes smoothly
                       className={cn(
                         "flex items-center text-lg font-medium transition-colors hover:text-primary",
                         pathname === route.href ? "text-primary" : "text-muted-foreground"
                       )}
                     >
                       {route.label}
-                    </button>
+                    </Link>
                   ))}
                 </nav>
               </SheetContent>
