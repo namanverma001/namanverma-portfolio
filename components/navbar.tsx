@@ -1,5 +1,7 @@
 "use client"
 
+import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ModeToggle } from "@/components/mode-toggle"
@@ -7,13 +9,25 @@ import { Code, Menu } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { useMobile } from "@/hooks/use-mobile"
 
 export default function Navbar() {
   const pathname = usePathname()
-  const isMobile = useMobile()
+  const router = useRouter()
+  const [isMobile, setIsMobile] = useState(false)
+  const [open, setOpen] = useState(false)
 
-  // Update the routes array to replace "Resume" with "Experience" and reorder
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768)
+    checkMobile()
+    window.addEventListener("resize", checkMobile)
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
+
+  // ✅ Close sidebar automatically when route changes
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname]) // 🔹 Runs whenever pathname changes
+
   const routes = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -38,7 +52,7 @@ export default function Navbar() {
         {isMobile ? (
           <div className="flex items-center gap-2">
             <ModeToggle />
-            <Sheet>
+            <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon">
                   <Menu className="h-5 w-5" />
@@ -48,16 +62,16 @@ export default function Navbar() {
               <SheetContent side="right">
                 <nav className="grid gap-4 py-6">
                   {routes.map((route) => (
-                    <Link
+                    <button
                       key={route.href}
-                      href={route.href}
+                      onClick={() => router.push(route.href)}
                       className={cn(
                         "flex items-center text-lg font-medium transition-colors hover:text-primary",
-                        pathname === route.href ? "text-primary" : "text-muted-foreground",
+                        pathname === route.href ? "text-primary" : "text-muted-foreground"
                       )}
                     >
                       {route.label}
-                    </Link>
+                    </button>
                   ))}
                 </nav>
               </SheetContent>
@@ -72,7 +86,7 @@ export default function Navbar() {
                   href={route.href}
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-primary",
-                    pathname === route.href ? "text-primary" : "text-muted-foreground",
+                    pathname === route.href ? "text-primary" : "text-muted-foreground"
                   )}
                 >
                   {route.label}
@@ -86,4 +100,3 @@ export default function Navbar() {
     </header>
   )
 }
-
