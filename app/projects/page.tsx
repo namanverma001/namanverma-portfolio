@@ -49,8 +49,8 @@ export default function ProjectsPage() {
         "A personal portfolio website showcasing my projects, skills, and experiences. Built with Next.js and Tailwind CSS, it features a responsive design and smooth navigation.",
       technologies: ["Next.js", "Tailwind CSS", "React.js"],
       image: portfolio,
-      github: "https://github.com/namanverma001/SkillVerse.git",
-      live: "https://skillverse-hfw4.onrender.com/",
+      github: "https://github.com/namanverma001/namanverma-portfolio.git",
+      live: "https://www.namanverma.site/",
       date: "Nov 2023",
     },
 
