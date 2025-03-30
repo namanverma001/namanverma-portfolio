@@ -6,20 +6,6 @@ import Link from "next/link"
 export default function ExperiencePage() {
   const experiences = [
     {
-      title: "SDE Intern (Co-Team Lead)",
-      company: "BlueStock Fintech",
-      location: "Pune (Virtual)",
-      period: "Dec 2024 - Jan 2025",
-      description: [
-        "Worked as a Co-Team Lead at BlueStock Fintech, handling the frontend development using React.js",
-        "Ensured a seamless and user-friendly interface while collaborating with backend developers and designers for efficient implementation",
-        "Led a team of 3 developers to implement new features and improve existing functionality",
-        "Participated in daily stand-ups and sprint planning meetings to ensure project milestones were met",
-        "Implemented responsive design principles to ensure compatibility across all devices",
-      ],
-      skills: ["React.js", "JavaScript", "UI/UX", "Team Leadership", "Responsive Design", "Git"],
-    },
-    {
       title: "Web Development Intern",
       company: "Adichem Technology Pvt. Ltd.",
       location: "Nashik (On-site)",
@@ -40,28 +26,43 @@ export default function ExperiencePage() {
         "Component-Based Architecture",
       ],
     },
+    {
+      title: "SDE Intern (Co-Team Lead)",
+      company: "BlueStock Fintech",
+      location: "Pune (Virtual)",
+      period: "Dec 2024 - Jan 2025",
+      description: [
+        "Worked as a Co-Team Lead at BlueStock Fintech, handling the frontend development using React.js",
+        "Ensured a seamless and user-friendly interface while collaborating with backend developers and designers for efficient implementation",
+        "Led a team of 3 developers to implement new features and improve existing functionality",
+        "Participated in daily stand-ups and sprint planning meetings to ensure project milestones were met",
+        "Implemented responsive design principles to ensure compatibility across all devices",
+      ],
+      skills: ["React.js", "JavaScript", "UI/UX", "Team Leadership", "Responsive Design", "Git"],
+    },
+
   ]
 
   const certifications = [
+    // {
+    //   title: "Web Development Fundamentals",
+    //   issuer: "Udemy",
+    //   date: "January 2023",
+    //   description: "Completed a comprehensive course on HTML, CSS, and JavaScript fundamentals.",
+    //   link: "#",
+    // },
+    // {
+    //   title: "React.js Certification",
+    //   issuer: "freeCodeCamp",
+    //   date: "March 2023",
+    //   description: "Mastered React.js concepts including hooks, state management, and component lifecycle.",
+    //   link: "#",
+    // },
     {
-      title: "Web Development Fundamentals",
-      issuer: "Udemy",
-      date: "January 2023",
-      description: "Completed a comprehensive course on HTML, CSS, and JavaScript fundamentals.",
-      link: "#",
-    },
-    {
-      title: "React.js Certification",
-      issuer: "freeCodeCamp",
-      date: "March 2023",
-      description: "Mastered React.js concepts including hooks, state management, and component lifecycle.",
-      link: "#",
-    },
-    {
-      title: "Database Design & SQL",
-      issuer: "Coursera",
+      title: "Database Management System",
+      issuer: "NPTEL",
       date: "June 2023",
-      description: "Learned database design principles and advanced SQL queries.",
+      description: "Learned database Management System principles and advanced SQL queries.",
       link: "#",
     },
   ]
@@ -185,7 +186,7 @@ export default function ExperiencePage() {
                       <Calendar className="h-4 w-4" />
                       <span>2022 - 2026</span>
                     </div>
-                    <div className="mt-1">CGPA: 9.93</div>
+                    <div className="mt-1">CGPA: 8.93</div>
                   </div>
                 </div>
               </CardHeader>

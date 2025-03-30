@@ -70,7 +70,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">namanverma2019@gmail.com</p>
+                    <p className="text-sm text-muted-foreground">namanverma0219@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -107,12 +107,12 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-medium">GitHub</p>
                     <a
-                      href="https://github.com/username"
+                      href="https://github.com/namanverma001"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-primary hover:underline"
                     >
-                      github.com/username
+                      https://github.com/namanverma001
                     </a>
                   </div>
                 </div>
@@ -123,12 +123,12 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-medium">LinkedIn</p>
                     <a
-                      href="https://linkedin.com/in/username"
+                      href="https://www.linkedin.com/in/naman-verma-824baa257/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-primary hover:underline"
                     >
-                      linkedin.com/in/username
+                      https://www.linkedin.com/in/naman-verma-824baa257/
                     </a>
                   </div>
                 </div>

@@ -39,7 +39,7 @@ export default function AboutPage() {
                 </Button>
               </Link>
             </div>
-            <Link href="/resume">
+            <Link href="https://drive.google.com/file/d/1Bwkcm6anEEAjGq7kqMfV_qcRRrnl3NvL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button className="w-full">
                 <FileText className="mr-2 h-4 w-4" />
                 View Resume
@@ -78,12 +78,16 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold">Education</h3>
               <div className="mt-2 space-y-2">
                 <div>
-                  <p className="font-medium">K.K. Wagh Institute of Engineering Education and Research</p>
+                  <p className="font-medium">K.K. Wagh Institute of Engineering Education and Research,Nashik</p>
                   <p className="text-sm text-muted-foreground">B.Tech Computer Engineering (2022 - 2026)</p>
                 </div>
                 <div>
-                  <p className="font-medium">B.D. Public School, Rajpur</p>
+                  <p className="font-medium">B.D. Public School, Bihar</p>
                   <p className="text-sm text-muted-foreground">CBSE-HSC (2020 - 2022)</p>
+                </div>
+                <div>
+                  <p className="font-medium">St. John's Academy, Bihar</p>
+                  <p className="text-sm text-muted-foreground">CBSE-SSC (2019 - 2020)</p>
                 </div>
               </div>
             </div>

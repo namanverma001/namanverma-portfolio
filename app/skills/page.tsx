@@ -6,41 +6,41 @@ export default function SkillsPage() {
     {
       name: "Programming Languages",
       skills: [
-        { name: "JavaScript", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "TypeScript", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Python", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "C++", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Java", logo: "/placeholder.svg?height=80&width=80" },
+        { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" },
+        { name: "TypeScript", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" },
+        { name: "Python", logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" },
+        { name: "C++", logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" },
+        { name: "Java", logo: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" },
       ],
     },
     {
       name: "Frontend",
       skills: [
-        { name: "React", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Next.js", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Tailwind CSS", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "HTML5", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "CSS3", logo: "/placeholder.svg?height=80&width=80" },
+        { name: "React", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
+        { name: "Next.js", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
+        { name: "Tailwind CSS", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
+        { name: "HTML5", logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" },
+        { name: "CSS3", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" },
       ],
     },
     {
       name: "Backend",
       skills: [
-        { name: "Node.js", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Express.js", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "MongoDB", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "MySQL", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Firebase", logo: "/placeholder.svg?height=80&width=80" },
+        { name: "Node.js", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" },
+        { name: "Express.js", logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" },
+        { name: "MongoDB", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9p_G7WR97buHsTlFGGRRufWq5e8ezZrRINw&s" },
+        { name: "MySQL", logo: "https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" },
+        { name: "Firebase", logo: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" },
       ],
     },
     {
       name: "Tools & Others",
       skills: [
-        { name: "Git", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "GitHub", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "VS Code", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Figma", logo: "/placeholder.svg?height=80&width=80" },
-        { name: "Docker", logo: "/placeholder.svg?height=80&width=80" },
+        { name: "Git", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" },
+        { name: "GitHub", logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" },
+        { name: "VS Code", logo: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" },
+        { name: "Figma", logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" },
+        { name: "Docker", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" },
       ],
     },
   ]
@@ -84,4 +84,3 @@ export default function SkillsPage() {
     </div>
   )
 }
-

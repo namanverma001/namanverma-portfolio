@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <div className="flex gap-4">
           <Link
-            href="https://github.com/username"
+            href="https://github.com/namanverma001"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted-foreground hover:text-muted"
@@ -21,7 +21,7 @@ export default function Footer() {
             <span className="sr-only">GitHub</span>
           </Link>
           <Link
-            href="https://linkedin.com/in/username"
+            href="https://www.linkedin.com/in/naman-verma-824baa257/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted-foreground hover:text-muted"
@@ -30,7 +30,7 @@ export default function Footer() {
             <span className="sr-only">LinkedIn</span>
           </Link>
           <Link
-            href="mailto:namanverma2019@gmail.com"
+            href="mailto:namanverma0219@gmail.com"
             className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted-foreground hover:text-muted"
           >
             <Mail className="h-5 w-5" />

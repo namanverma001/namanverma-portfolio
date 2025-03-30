@@ -3,7 +3,10 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Github, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-
+import ctshirts from "@/assets/ctshirts.png"
+import skillverse from "@/assets/skillverse.png"
+import nextmart from "@/assets/nextmart.png"
+import portfolio from "@/assets/portfolio.png"
 export default function ProjectsPage() {
   const projects = [
     {
@@ -12,9 +15,9 @@ export default function ProjectsPage() {
       longDescription:
         "An interactive and user-friendly website that allows customers to customize and order their own t-shirts. The platform offers a seamless experience from design to purchase, integrating user authentication and customization options.",
       technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
-      image: "/placeholder.svg?height=400&width=600",
-      github: "https://github.com/username/qshirts",
-      live: "https://qshirts.example.com",
+      image: ctshirts,
+      github: "https://github.com/namanverma001/ctshirts.in.git",
+      live: 'https://ctshirts-in.vercel.app/',
       date: "Apr 2024",
     },
     {
@@ -23,52 +26,34 @@ export default function ProjectsPage() {
       longDescription:
         "A user-centric e-commerce platform with a responsive React.js UI, integrated MongoDB, Express.js, and Node.js for scalability, and implementing features like authentication, shopping cart, product catalog, and payment gateway to enhance user experience.",
       technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"],
-      image: "/placeholder.svg?height=400&width=600",
-      github: "https://github.com/username/nextmart",
-      live: "https://nextmart.example.com",
+      image: nextmart,
+      github: "https://github.com/namanverma001/NextMart.git",
+      live: "#",
       date: "Dec 2024",
     },
     {
-      title: "Portfolio Website",
-      description: "Personal Portfolio with React and Tailwind CSS",
+      title: "SkillVerse",
+      description: "A Prototype Website for Google Solution Challenge Hack2Skill For Education Domain",
       longDescription:
-        "A modern, responsive portfolio website built with React.js and Tailwind CSS to showcase my projects, skills, and experience. Features include dark/light mode toggle, responsive design, and interactive elements.",
-      technologies: ["React.js", "Tailwind CSS", "Next.js", "Framer Motion"],
-      image: "/placeholder.svg?height=400&width=600",
+        "SkillVerse is a platform designed to help students from low-income backgrounds learn and grow. It offers a Learning Hub with free courses, AI-generated lecture notes, and an AI chatbot for doubts. The Scholarship Section connects students with NGO-funded scholarships, while the Freelancing Hub enables them to earn a side income",
+      technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
+      image: skillverse,
       github: "https://github.com/username/portfolio",
       live: "https://portfolio.example.com",
       date: "Mar 2024",
     },
     {
-      title: "Python Mini Project",
-      description: "3rd Position in Python Mini Project Competition",
+      title: "Personal Portfolio",
+      description: "My Personal Portfolio Website and Deployed on my Own Domain",
       longDescription:
-        "A Python-based application developed for a competition at Z-mart Shoppy. The project demonstrates proficiency in Python programming and problem-solving skills.",
-      technologies: ["Python", "Tkinter", "SQLite"],
-      image: "/placeholder.svg?height=400&width=600",
-      github: "https://github.com/username/python-mini",
+        "A personal portfolio website showcasing my projects, skills, and experiences. Built with Next.js and Tailwind CSS, it features a responsive design and smooth navigation.",
+      technologies: ["Next.js", "Tailwind CSS", "React.js"],
+      image: portfolio,
+      github: "https://github.com/namanverma001/SkillVerse.git",
+      live: "https://skillverse-hfw4.onrender.com/",
       date: "Nov 2023",
     },
-    {
-      title: "Logo Master Competition Project",
-      description: "3rd Position in Logo Master Competition",
-      longDescription:
-        "A logo design project that secured 3rd position in the Logo Master Competition by Carrer Katta forum of K.K.Wagh Institute of Engineering Education and Research, Nashik.",
-      technologies: ["Adobe Illustrator", "Photoshop"],
-      image: "/placeholder.svg?height=400&width=600",
-      github: "https://github.com/username/logo-master",
-      date: "Oct 2023",
-    },
-    {
-      title: "Database Mini Project",
-      description: "2nd Winner in Database Mini Project Competition",
-      longDescription:
-        "A database project for ShortLift-Connecting College Student for Share Rides that won 2nd place in the competition. The project demonstrates skills in database design, normalization, and query optimization.",
-      technologies: ["MySQL", "MongoDB", "Express.js"],
-      image: "/placeholder.svg?height=400&width=600",
-      github: "https://github.com/username/database-mini",
-      date: "Sep 2023",
-    },
+
   ]
 
   return (

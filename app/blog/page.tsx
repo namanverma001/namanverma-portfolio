@@ -14,10 +14,10 @@ export default function BlogPage() {
       date: "March 15, 2024",
       readTime: "8 min read",
       category: "React",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTokZliYkKkA5G-4WfbuaNpKj5f9PYnTUPLA&s",
       slug: "getting-started-with-react",
+      link: "https://react.dev/", // Added link field
     },
-
   ]
 
   const categories = ["All", "React", "JavaScript", "CSS", "Next.js", "Full-Stack", "Web Design"]
@@ -69,7 +69,7 @@ export default function BlogPage() {
                 <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>
               </CardContent>
               <CardFooter>
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={post.link}>
                   <Button variant="ghost" className="p-0 hover:bg-transparent">
                     Read More
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -87,4 +87,3 @@ export default function BlogPage() {
     </div>
   )
 }
-

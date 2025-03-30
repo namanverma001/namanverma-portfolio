@@ -19,7 +19,7 @@ import Link from "next/link"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 import naman from "@/assets/naman1.jpg"
 import ctshirts from "@/assets/ctshirts.png"
-import zmart from "@/assets/zmart.png"
+import nextmart from "@/assets/nextmart.png"
 export default function Home() {
   const words = [
     {
@@ -45,31 +45,20 @@ export default function Home() {
       title: "Ctshirts.in",
       description: "Custom T-shirt Design and Ordering Platform",
       technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
-      link: "/projects/qshirts",
+      link: "https://github.com/namanverma001/ctshirts.in.git",
       thumbnail: ctshirts,
     },
     {
       title: "NEXTMART",
       description: "Comprehensive E-commerce Platform",
       technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"],
-      link: "/projects/nextmart",
-      thumbnail: zmart,
+      link: "https://github.com/namanverma001/NextMart.git",
+      thumbnail: nextmart,
     },
 
   ]
 
   const experiences = [
-    {
-      title: "SDE Intern (Co-Team Lead)",
-      company: "BlueStock Fintech",
-      location: "Pune (Virtual)",
-      period: "Dec 2024 - Jan 2025",
-      description: [
-        "Worked as a Co-Team Lead at BlueStock Fintech, handling the frontend development using React.js",
-        "Ensured a seamless and user-friendly interface while collaborating with backend developers and designers for efficient implementation",
-      ],
-      skills: ["React.js", "JavaScript", "UI/UX", "Team Leadership"],
-    },
     {
       title: "Web Development Intern",
       company: "Adichem Technology Pvt. Ltd.",
@@ -81,6 +70,18 @@ export default function Home() {
       ],
       skills: ["React.js", "Tailwind CSS", "Responsive Design", "Web Performance"],
     },
+    {
+      title: "SDE Intern (Co-Team Lead)",
+      company: "BlueStock Fintech",
+      location: "Pune (Virtual)",
+      period: "Dec 2024 - Jan 2025",
+      description: [
+        "Worked as a Co-Team Lead at BlueStock Fintech, handling the frontend development using React.js",
+        "Ensured a seamless and user-friendly interface while collaborating with backend developers and designers for efficient implementation",
+      ],
+      skills: ["React.js", "JavaScript", "UI/UX", "Team Leadership"],
+    },
+
   ]
 
   const blogPosts = [
@@ -182,17 +183,17 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4">Education</h3>
                 <div className="space-y-4">
                   <div className="border-b pb-4">
-                    <h4 className="font-bold">K.K. Wagh Institute of Engineering Education and Research</h4>
+                    <h4 className="font-bold">K.K. Wagh Institute of Engineering Education and Research,Nashik</h4>
                     <p className="text-sm text-muted-foreground">B.Tech Computer Engineering (2022 - 2026)</p>
                     <p className="text-sm text-muted-foreground">CGPA: 8.93</p>
                   </div>
                   <div className="border-b pb-4">
-                    <h4 className="font-bold">B.D. Public School, Rajpur</h4>
+                    <h4 className="font-bold">B.D. Public School, Bihar</h4>
                     <p className="text-sm text-muted-foreground">CBSE-HSC (2020 - 2022)</p>
                     <p className="text-sm text-muted-foreground">Percentage: 84.20</p>
                   </div>
                   <div>
-                    <h4 className="font-bold">St. John's Academy, Mahua</h4>
+                    <h4 className="font-bold">St. John's Academy, Bihar</h4>
                     <p className="text-sm text-muted-foreground">CBSE-SSC (2019 - 2020)</p>
                     <p className="text-sm text-muted-foreground">Percentage: 78</p>
                   </div>
@@ -336,16 +337,7 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <div className="flex space-x-2">
-                    <Button variant="outline" size="icon">
-                      <Github className="h-4 w-4" />
-                      <span className="sr-only">GitHub</span>
-                    </Button>
-                    <Button variant="outline" size="icon">
-                      <Globe className="h-4 w-4" />
-                      <span className="sr-only">Live Demo</span>
-                    </Button>
-                  </div>
+
                 </CardFooter>
               </Card>
             ))}
