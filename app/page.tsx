@@ -116,9 +116,9 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="/projects">
+                <Link href="https://drive.google.com/file/d/1Bwkcm6anEEAjGq7kqMfV_qcRRrnl3NvL/view">
                   <Button className="w-full min-[400px]:w-auto">
-                    View Projects
+                    View Resume
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
