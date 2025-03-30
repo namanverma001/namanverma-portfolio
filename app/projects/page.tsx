@@ -38,8 +38,8 @@ export default function ProjectsPage() {
         "SkillVerse is a platform designed to help students from low-income backgrounds learn and grow. It offers a Learning Hub with free courses, AI-generated lecture notes, and an AI chatbot for doubts. The Scholarship Section connects students with NGO-funded scholarships, while the Freelancing Hub enables them to earn a side income",
       technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
       image: skillverse,
-      github: "https://github.com/username/portfolio",
-      live: "https://portfolio.example.com",
+      github: "https://github.com/namanverma001/SkillVerse.git",
+      live: "https://skillverse-hfw4.onrender.com/",
       date: "Mar 2024",
     },
     {
