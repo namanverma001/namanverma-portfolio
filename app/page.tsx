@@ -18,8 +18,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 import naman from "@/assets/naman1.jpg"
-import ctshirts from "@/assets/ctshirts.png"
-import nextmart from "@/assets/nextmart.png"
+import adichem from "@/assets/adichem.png"
+import skillcraftai from "@/assets/skillcraftai.png"
 export default function Home() {
   const words = [
     {
@@ -42,18 +42,18 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Ctshirts.in",
-      description: "Custom T-shirt Design and Ordering Platform",
-      technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
-      link: "https://github.com/namanverma001/ctshirts.in.git",
-      thumbnail: ctshirts,
+      title: "SKillCraft AI",
+      description: "AI-Powered Career Development Platform",
+      technologies: ["Next.js", "Prisma", "Google Generative AI", "Clerk Authentication", "Prisma"],
+      link: "https://skillcraft-efpg.onrender.com/",
+      thumbnail: skillcraftai,
     },
     {
-      title: "NEXTMART",
-      description: "Comprehensive E-commerce Platform",
-      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"],
-      link: "https://github.com/namanverma001/NextMart.git",
-      thumbnail: nextmart,
+      title: "Adichem Technology Pvt. Ltd. Nashik",
+      description: "Official Website for Adichem Technology Pvt. Ltd.",
+      technologies: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
+      link: "https://www.adichemtechnology.com/",
+      thumbnail: adichem,
     },
 
   ]
@@ -333,7 +333,7 @@ export default function Home() {
                 <CardFooter className="flex justify-between">
                   <Link href={project.link}>
                     <Button variant="outline" size="sm">
-                      View Details
+                      Watch Project
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>

@@ -7,29 +7,20 @@ import ctshirts from "@/assets/ctshirts.png"
 import skillverse from "@/assets/skillverse.png"
 import nextmart from "@/assets/nextmart.png"
 import portfolio from "@/assets/portfolio.png"
+import adichem from "@/assets/adichem.png"
+import skillcraftai from "@/assets/skillcraftai.png"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Cshirts.in",
-      description: "Custom T-shirt Design and Ordering Platform",
+      title: "SkillCraft AI",
+      description: "AI-Powered Career Development Platform",
       longDescription:
-        "An interactive and user-friendly website that allows customers to customize and order their own t-shirts. The platform offers a seamless experience from design to purchase, integrating user authentication and customization options.",
-      technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
-      image: ctshirts,
-      github: "https://github.com/namanverma001/ctshirts.in.git",
-      live: 'https://ctshirts-in.vercel.app/',
-      date: "Apr 2024",
-    },
-    {
-      title: "NEXTMART",
-      description: "Comprehensive E-commerce Platform",
-      longDescription:
-        "A user-centric e-commerce platform with a responsive React.js UI, integrated MongoDB, Express.js, and Node.js for scalability, and implementing features like authentication, shopping cart, product catalog, and payment gateway to enhance user experience.",
-      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"],
-      image: nextmart,
-      github: "https://github.com/namanverma001/NextMart.git",
-      live: "#",
-      date: "Dec 2024",
+        "An AI-driven career development platform that provides personalized industry insights, resume building, and interview preparation tools. Key contributions include:\n\n- Industry Insights: Integrated Google Generative AI to analyze market trends, salary ranges, and in-demand skills, delivering weekly updated insights tailored to users' industries.\n- Custom Content Generation: Built intelligent systems for generating resumes, cover letters, and interview questions based on user profiles and industry standards.\n- Secure Authentication: Implemented Clerk for secure user authentication and data encryption, ensuring user privacy and compliance with industry standards.\n- Scalable Backend: Designed a robust backend using Prisma and Next.js to handle dynamic data updates and real-time user interactions.\n- Event-Driven Architecture: Leveraged Inngest for scheduling and automating weekly updates of industry insights.",
+      technologies: ["Next.js", "Prisma", "Google Generative AI", "Clerk Authentication", "Prisma"],
+      image: skillcraftai,
+      github: "https://github.com/namanverma001/SkillCraft-ai.git",
+      live: "https://skillcraft-efpg.onrender.com/",
+      date: "March 2025",
     },
     {
       title: "SkillVerse",
@@ -43,6 +34,17 @@ export default function ProjectsPage() {
       date: "Mar 2024",
     },
     {
+      title: "Adichem Technology Pvt. Ltd. Nashik",
+      description: "Official Website for Adichem Technology Pvt. Ltd.",
+      longDescription:
+        "Adichem Technology Pvt. Ltd. is a leading manufacturer of specialty chemicals and polymers. The website showcases their products, services, and company information.",
+      technologies: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
+      image: adichem,
+      github: "#",
+      live: "https://www.adichemtechnology.com/",
+      date: "Feb 2025",
+    },
+    {
       title: "Personal Portfolio",
       description: "My Personal Portfolio Website and Deployed on my Own Domain",
       longDescription:
@@ -51,9 +53,30 @@ export default function ProjectsPage() {
       image: portfolio,
       github: "https://github.com/namanverma001/namanverma-portfolio.git",
       live: "https://www.namanverma.site/",
-      date: "Nov 2023",
+      date: "March 2025",
     },
-
+    {
+      title: "Cshirts.in",
+      description: "Custom T-shirt Design and Ordering Platform",
+      longDescription:
+        "An interactive and user-friendly website that allows customers to customize and order their own t-shirts. The platform offers a seamless experience from design to purchase, integrating user authentication and customization options.",
+      technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
+      image: ctshirts,
+      github: "https://github.com/namanverma001/ctshirts.in.git",
+      live: "https://ctshirts-in.vercel.app/",
+      date: "Apr 2024",
+    },
+    {
+      title: "NEXTMART",
+      description: "Comprehensive E-commerce Platform",
+      longDescription:
+        "A user-centric e-commerce platform with a responsive React.js UI, integrated MongoDB, Express.js, and Node.js for scalability, and implementing features like authentication, shopping cart, product catalog, and payment gateway to enhance user experience.",
+      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"],
+      image: nextmart,
+      github: "https://github.com/namanverma001/NextMart.git",
+      live: "#",
+      date: "Dec 2024",
+    },
   ]
 
   return (
