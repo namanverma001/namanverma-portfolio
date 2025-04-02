@@ -6,6 +6,7 @@ import {
   Briefcase,
   Calendar,
   Code,
+  FileText,
   Github,
   Globe,
   Linkedin,
@@ -116,10 +117,10 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="https://drive.google.com/file/d/1Bwkcm6anEEAjGq7kqMfV_qcRRrnl3NvL/view">
-                  <Button className="w-full min-[400px]:w-auto">
+                <Link href="https://drive.google.com/file/d/1WNFiKddO-3t8x-ETQ7Nrql7PNLAWn1XG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full">
+                    <FileText className="mr-2 h-4 w-4" />
                     View Resume
-                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="/contact">
@@ -143,10 +144,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* About Section - Similar to About Page */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      < section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
@@ -202,10 +203,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Experience Section - Comes right after About */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      < section className="w-full py-12 md:py-24 lg:py-32" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Professional Experience</h2>
@@ -288,10 +289,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Projects Section - Similar to Projects Page */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      < section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
@@ -352,10 +353,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Skills Section - Similar to Skills Page */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      < section className="w-full py-12 md:py-24 lg:py-32" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">My Skills</h2>
@@ -435,10 +436,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Achievements Section - Similar to Achievements Page */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      < section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Achievements & Extracurricular</h2>
@@ -532,10 +533,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Blog Section - Similar to Blog Page */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      < section className="w-full py-12 md:py-24 lg:py-32" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Latest Blog Posts</h2>
@@ -591,10 +592,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Contact Section - Similar to Contact Page */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      < section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get In Touch</h2>
@@ -672,10 +673,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Quick Links */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      < section className="w-full py-12 md:py-24 lg:py-32" >
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Link href="/about">
@@ -716,8 +717,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   )
 }
 
