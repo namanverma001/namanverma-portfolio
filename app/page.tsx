@@ -18,7 +18,7 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
-import naman from "@/assets/naman1.jpg"
+import naman from "@/assets/naman.png"
 import adichem from "@/assets/adichem.png"
 import skillcraftai from "@/assets/skillcraftai.png"
 export default function Home() {
@@ -117,7 +117,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="https://drive.google.com/file/d/1WNFiKddO-3t8x-ETQ7Nrql7PNLAWn1XG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Link href="https://drive.google.com/file/d/1HlquOrnr4Oo0Tlu6vQ1uChXHUPkhUriu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full">
                     <FileText className="mr-2 h-4 w-4" />
                     View Resume
