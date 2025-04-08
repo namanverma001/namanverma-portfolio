@@ -24,19 +24,13 @@ import skillcraftai from "@/assets/skillcraftai.png"
 export default function Home() {
   const words = [
     {
-      text: "Building",
+      text: "Building Solution",
     },
     {
-      text: "innovative",
+      text: "Full Stack Developer",
     },
     {
-      text: "solutions",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "code.",
+      text: "Let's Connect!",
       className: "text-primary",
     },
   ]
@@ -130,7 +124,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="hidden md:flex items-center justify-center">
               <div className="relative h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[450px] lg:w-[450px] overflow-hidden">
                 <Image
                   src={naman}
