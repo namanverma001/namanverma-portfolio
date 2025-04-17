@@ -40,7 +40,7 @@ export default function Home() {
       title: "SKillCraft AI",
       description: "AI-Powered Career Development Platform",
       technologies: ["Next.js", "Prisma", "Google Generative AI", "Clerk Authentication", "Prisma"],
-      link: "https://skillcraft-efpg.onrender.com/",
+      link: "https://skillcraft-ai-abq9.onrender.com/",
       thumbnail: skillcraftai,
     },
     {

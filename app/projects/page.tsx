@@ -19,7 +19,7 @@ export default function ProjectsPage() {
       technologies: ["Next.js", "Prisma", "Google Generative AI", "Clerk Authentication", "Prisma"],
       image: skillcraftai,
       github: "https://github.com/namanverma001/SkillCraft-ai.git",
-      live: "https://skillcraft-efpg.onrender.com/",
+      live: "https://skillcraft-ai-abq9.onrender.com/",
       date: "March 2025",
     },
     {
