@@ -19,7 +19,7 @@ export default function ProjectsPage() {
       technologies: ["Next.js", "Prisma", "Google Generative AI", "Clerk Authentication", "Prisma"],
       image: skillcraftai,
       github: "https://github.com/namanverma001/SkillCraft-ai.git",
-      live: "https://skillcraft-ai-abq9.onrender.com/",
+      live: "https://skillcraftai.vercel.app/",
       date: "March 2025",
     },
     {
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
       technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
       image: skillverse,
       github: "https://github.com/namanverma001/SkillVerse.git",
-      live: "https://skillverse-hfw4.onrender.com/",
+      live: "https://skillverse-virid.vercel.app/",
       date: "Mar 2024",
     },
     {
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
       technologies: ["HTML5", "CSS", "JavaScript", "JSON", "Firebase"],
       image: ctshirts,
       github: "https://github.com/namanverma001/ctshirts.in.git",
-      live: "https://ctshirts-in.vercel.app/",
+      live: "#",
       date: "Apr 2024",
     },
     {
