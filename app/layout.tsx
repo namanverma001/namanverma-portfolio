@@ -10,8 +10,23 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Naman Verma | Computer Engineer",
-  description: "Personal portfolio website showcasing projects, skills, and experience",
-  generator: 'namanverma'
+  description: "Explore Naman Verma's portfolio showcasing expertise in Computer Engineering, coding, and tech innovation.",
+  keywords: "Naman Verma, Computer Engineer, Computer Engineering, Tech, Coding, Web Development, Software Engineer",
+  authors: [{ name: "Naman Verma" }],
+  openGraph: {
+    title: "Naman Verma | Computer Engineer",
+    description: "Explore Naman Verma's portfolio showcasing expertise in Computer Engineering, coding, and tech innovation.",
+    url: "https://your-portfolio-url.com",
+    images: [
+      {
+        url: "/path-to-your-image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Naman Verma Portfolio",
+      },
+    ],
+    type: "website",
+  },
 }
 
 export default function RootLayout({
