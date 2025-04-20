@@ -9,6 +9,7 @@ import nextmart from "@/assets/nextmart.png"
 import portfolio from "@/assets/portfolio.png"
 import adichem from "@/assets/adichem.png"
 import skillcraftai from "@/assets/skillcraftai.png"
+import optmahealth from "@/assets/optimahealth.jpg"
 export default function ProjectsPage() {
   const projects = [
     {
@@ -32,6 +33,17 @@ export default function ProjectsPage() {
       github: "https://github.com/namanverma001/SkillVerse.git",
       live: "https://skillverse-virid.vercel.app/",
       date: "Mar 2024",
+    },
+    {
+      title: "OptimaHealth",
+      description: "Medication Management Application",
+      longDescription:
+        "OptimaHealth is a cross-platform mobile application designed to help individuals manage their medications effectively. Key features include:\n\n- Medication Scheduling: Allows users to set reminders for medications based on specific times and frequencies.\n- Dose Tracking: Enables users to log their medication intake and track missed or extra doses.\n- Refill Alerts: Notifies users when their medication supply is running low to ensure timely refills.\n- Health Assistant: Integrates a chatbot to assist users with general health-related queries and guidance.\n- Data Security: Ensures sensitive health information is stored securely and accessed only by authorized users.\n- User-Friendly Interface: Features an intuitive design suitable for users of all age groups, including the elderly.\n- Cross-Platform Support: Works seamlessly on Android, iOS, and web platforms.",
+      technologies: ["React Native", "Typescript", "Gemini API", "Chatbot Integration"],
+      image: optmahealth,
+      github: "https://github.com/namanverma001/OptimaHealth.git",
+      live: "https://expo.dev/accounts/namanverma0001/projects/optimahealth/builds/fc9dab09-2912-4453-8533-852e524ccbe4",
+      date: "April 2025",
     },
     {
       title: "Adichem Technology Pvt. Ltd. Nashik",
