@@ -10,6 +10,7 @@ import portfolio from "@/assets/portfolio.png"
 import adichem from "@/assets/adichem.png"
 import skillcraftai from "@/assets/skillcraftai.png"
 import optmahealth from "@/assets/optimahealth.jpg"
+import algovisual from "@/assets/algovisuallab.png"
 export default function ProjectsPage() {
   const projects = [
     {
@@ -21,6 +22,17 @@ export default function ProjectsPage() {
       image: skillcraftai,
       github: "https://github.com/namanverma001/SkillCraft-ai.git",
       live: "https://skillcraftai.vercel.app/",
+      date: "March 2025",
+    },
+    {
+      title: "AlgoVisualLab",
+      description: "Algorithm Visualizer and Learning Platform",
+      longDescription:
+        "AlgoVisualLab is an interactive platform designed to help users visualize and understand various algorithms. It features:\n\n- Algorithm Visualization: Users can visualize sorting algorithms, data structures, and more in real-time.\n- Interactive Learning: The platform allows users to step through algorithms, providing a hands-on learning experience.\n- User-Friendly Interface: Designed for ease of use, making it accessible for both beginners and advanced users.",
+      technologies: ["React.js", "Tailwind CSS", "Vite", "JavaScript"],
+      image: algovisual,
+      github: "https://github.com/namanverma001/AlgoVisualLab.git",
+      live: "https://algovisuallab.vercel.app/",
       date: "March 2025",
     },
     {

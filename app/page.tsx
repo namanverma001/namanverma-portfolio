@@ -19,7 +19,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 import naman from "@/assets/naman.png"
-import adichem from "@/assets/adichem.png"
+import algovisual from "@/assets/algovisuallab.png"
 import skillcraftai from "@/assets/skillcraftai.png"
 export default function Home() {
   const words = [
@@ -44,11 +44,11 @@ export default function Home() {
       thumbnail: skillcraftai,
     },
     {
-      title: "Adichem Technology Pvt. Ltd. Nashik",
-      description: "Official Website for Adichem Technology Pvt. Ltd.",
-      technologies: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
-      link: "https://www.adichemtechnology.com/",
-      thumbnail: adichem,
+      title: "AlgoVisualLab",
+      description: "Algorithm Visualizer and Learning Platform.",
+      technologies: ["React.js", "Tailwind CSS", "Vite", "JavaScript"],
+      link: "https://algovisuallab.vercel.app/",
+      thumbnail: algovisual,
     },
 
   ]
