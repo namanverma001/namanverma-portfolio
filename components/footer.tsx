@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { SiLeetcode } from "react-icons/si";
+import { Instagram } from "lucide-react"; // Import Instagram icon
 
 export default function Footer() {
   return (
@@ -45,6 +46,15 @@ export default function Footer() {
           >
             <SiLeetcode className="h-5 w-5" />
             <span className="sr-only">LeetCode</span>
+          </Link>
+          <Link
+            href="https://www.instagram.com/naman.verma.01/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-muted p-2 text-pink-500 transition-colors hover:bg-muted-foreground hover:text-muted"
+          >
+            <Instagram className="h-5 w-5" />
+            <span className="sr-only">Instagram</span>
           </Link>
         </div>
       </div>
