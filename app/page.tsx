@@ -530,7 +530,7 @@ export default function Home() {
       </section >
 
       {/* Blog Section - Similar to Blog Page */}
-      < section className="w-full py-12 md:py-24 lg:py-32" >
+      {/* < section className="w-full py-12 md:py-24 lg:py-32" >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Latest Blog Posts</h2>
@@ -586,7 +586,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section >
+      </section > */}
 
       {/* Contact Section - Similar to Contact Page */}
       < section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50" >
