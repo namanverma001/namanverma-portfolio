@@ -32,7 +32,7 @@ export default function AchievementsPage() {
       image: sharelift, // Keeping placeholder for now
     },
     {
-      title: "250+ question on Coding Platform",
+      title: "300+ question on Coding Platform",
       organization: "LeetCode",
       date: "Present",
       description: "Solved Multiple coding problems on LeetCode, enhancing my problem-solving skills.",
