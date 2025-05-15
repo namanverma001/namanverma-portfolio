@@ -54,7 +54,7 @@ export default function AchievementsPage() {
     {
       title: "Sponsorship and Curation Team",
       organization: "Innov-era, A National Level Hackathon organized by KKWIEER",
-      period: "2023",
+      period: "2025",
       description: "Responsible for securing sponsorships and curating content for the hackathon.",
       icon: <Users className="h-5 w-5 text-primary" />,
     },
