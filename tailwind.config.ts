@@ -72,11 +72,32 @@ const config = {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeUp: {
+          "0%": { transform: "translateY(20px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        gradient: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         blink: "blink 1s step-end infinite",
+        "fade-in": "fadeIn 1s ease-in-out",
+        "fade-up": "fadeUp 0.8s ease-out forwards",
+        gradient: "gradient 8s linear infinite",
       },
     },
   },
