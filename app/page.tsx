@@ -126,15 +126,15 @@ export default function Home() {
             </div>
 
             <div className="flex items-center justify-center gap-6 mt-8">
-              <Link href="https://github.com/yourusername" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://github.com/namanverma001" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-6 w-6" />
               </Link>
-              <Link href="https://linkedin.com/in/yourusername" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://www.linkedin.com/in/naman-verma-824baa257/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-6 w-6" />
               </Link>
-              <Link href="https://twitter.com/yourusername" className="text-muted-foreground hover:text-primary transition-colors">
+              {/* <Link href="https://twitter.com/yourusername" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-6 w-6" />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
