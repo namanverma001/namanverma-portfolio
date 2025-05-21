@@ -39,13 +39,13 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="rounded-full bg-primary p-1">
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="rounded-full bg-primary p-1.5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
             <Code className="h-5 w-5 text-primary-foreground" />
           </div>
-          <span className="text-lg font-bold">Naman Verma</span>
+          <span className="text-lg font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Naman Verma</span>
         </Link>
 
         {isMobile ? (
@@ -53,21 +53,23 @@ export default function Navbar() {
             <ModeToggle />
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
+                <Button variant="outline" size="icon" className="hover:bg-primary/10 transition-colors">
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right">
-                <nav className="grid gap-4 py-6">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <nav className="grid gap-6 py-6">
                   {routes.map((route) => (
                     <Link
                       key={route.href}
                       href={route.href}
-                      onClick={() => setTimeout(() => setOpen(false), 100)} // ✅ Ensures menu closes smoothly
+                      onClick={() => setTimeout(() => setOpen(false), 100)}
                       className={cn(
-                        "flex items-center text-lg font-medium transition-colors hover:text-primary",
-                        pathname === route.href ? "text-primary" : "text-muted-foreground"
+                        "flex items-center text-lg font-medium transition-all duration-300 hover:text-primary hover:translate-x-2",
+                        pathname === route.href
+                          ? "text-primary font-semibold"
+                          : "text-muted-foreground"
                       )}
                     >
                       {route.label}
@@ -85,11 +87,17 @@ export default function Navbar() {
                   key={route.href}
                   href={route.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
-                    pathname === route.href ? "text-primary" : "text-muted-foreground"
+                    "text-sm font-medium transition-all duration-300 relative group",
+                    pathname === route.href
+                      ? "text-primary font-semibold"
+                      : "text-muted-foreground hover:text-primary"
                   )}
                 >
                   {route.label}
+                  <span className={cn(
+                    "absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full",
+                    pathname === route.href && "w-full"
+                  )} />
                 </Link>
               ))}
             </nav>
