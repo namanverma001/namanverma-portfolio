@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Naman Verma | Computer Engineer",
     description: "Explore Naman Verma's portfolio showcasing expertise in Computer Engineering, coding, and tech innovation.",
-    url: "https://your-portfolio-url.com",
+    url: "https://www.namanverma.site",
     images: [
       {
-        url: "/path-to-your-image.jpg",
+        url: "",
         width: 800,
         height: 600,
         alt: "Naman Verma Portfolio",

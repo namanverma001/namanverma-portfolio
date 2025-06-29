@@ -11,8 +11,45 @@ import adichem from "@/assets/adichem.png"
 import skillcraftai from "@/assets/skillcraftai.png"
 import optmahealth from "@/assets/optimahealth.jpg"
 import algovisual from "@/assets/algovisuallab.png"
+import Finsmart from "@/assets/finsmartai.png"
+import Mindly from "@/assets/mindly.png"
+import Vheekle from "@/assets/vheekle.png"
 export default function ProjectsPage() {
   const projects = [
+    {
+      title: "Vheekle",
+      description: "AI-Powered Car Marketplace Platform",
+      longDescription:
+        "An AI-powered car marketplace platform enabling users to buy, sell, and manage vehicles online with advanced search and filtering. Key contributions include:\n\n- Advanced Search & Filtering: Developed robust search and filter features for users to easily find vehicles matching their preferences.\n- Secure Authentication: Integrated Clerk for secure user authentication and data privacy.\n- Dynamic Listings: Built dynamic car listing and management with real-time updates using Supabase and Prisma.\n- Admin Dashboard: Designed an admin dashboard for managing users, listings, and analytics.\n- Test Drive Booking: Implemented a seamless test drive booking system and notification workflow.",
+      technologies: ["Next.js", "React", "Tailwind CSS", "Supabase", "Prisma", "Clerk Authentication"],
+      image: Vheekle,
+      github: "https://github.com/namanverma001/Vheekle.git",
+      live: "https://vheekle.vercel.app/",
+      date: "June 2025",
+    },
+    {
+      title: "FinSmart.ai",
+      description: "AI-Powered Finance Platform",
+      longDescription:
+        "An AI-powered finance platform with smart expense tracking, budgeting tools, and auto-generated financial insights. Key contributions include:\n\n- Smart Expense Tracking: Built modules for tracking expenses across multiple accounts with real-time updates.\n- Budgeting Tools: Developed interactive budgeting tools and visualizations for better financial planning.\n- AI Insights: Integrated Google Generative AI for personalized financial insights and monthly reports.\n- Receipt Scanning: Implemented smart receipt scanning and data extraction.\n- Secure Authentication: Used Clerk for secure user authentication and privacy.\n- Event Automation: Leveraged Inngest for automating monthly report generation and notifications.",
+      technologies: ["Next.js", "Prisma", "Clerk", "Inngest", "Google Generative AI"],
+      image: Finsmart,
+      github: "https://github.com/namanverma001/Finsmart.ai.git",
+      live: "https://finsmartai.vercel.app/",
+      date: "April 2025",
+    },
+
+    {
+      title: "Mindly",
+      description: "Personal Journal & Mood Insight Platform",
+      longDescription:
+        "A web application for organizing your thoughts and files. Users can add journal entries, organize them into folders, and receive mood insights based on their input. Key features include:\n\n- Thought Organization: Add, edit, and categorize your journal entries for better organization.\n- File Management: Attach and manage files alongside your thoughts.\n- Mood Insights: The app analyzes your entries and provides insights about your mood trends over time.\n- Privacy Focused: All data is securely stored and accessible only to the user.\n- Responsive Design: Works seamlessly across devices.",
+      technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", 'Clerk', "Prisma"],
+      image: Mindly,
+      github: "https://github.com/namanverma001/Mindly.git",
+      live: "https://mindly-eosin.vercel.app/",
+      date: "March 2025",
+    },
     {
       title: "SkillCraft AI",
       description: "AI-Powered Career Development Platform",

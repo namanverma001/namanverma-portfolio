@@ -19,10 +19,9 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
-import naman from "@/assets/naman.png"
-import algovisual from "@/assets/algovisuallab.png"
-import skillcraftai from "@/assets/skillcraftai.png"
 
+import Finsmart from "@/assets/finsmartai.png"
+import Vheekle from "@/assets/vheekle.png"
 export default function Home() {
   const words = [
     {
@@ -39,20 +38,19 @@ export default function Home() {
 
   const projects = [
     {
-      title: "SKillCraft AI",
-      description: "AI-Powered Career Development Platform",
-      technologies: ["Next.js", "Prisma", "Google Generative AI", "Clerk Authentication", "Prisma"],
-      link: "https://skillcraftai.vercel.app/",
-      thumbnail: skillcraftai,
+      title: "Vheekle",
+      description: "AI-Powered Car Marketplace Platform",
+      technologies: ["Next.js", "React", "Tailwind CSS", "Supabase", "Prisma", "Clerk Authentication"],
+      link: "https://vheekle.vercel.app/",
+      thumbnail: Vheekle,
     },
     {
-      title: "AlgoVisualLab",
-      description: "Algorithm Visualizer and Learning Platform.",
-      technologies: ["React.js", "Tailwind CSS", "Vite", "JavaScript"],
-      link: "https://algovisuallab.vercel.app/",
-      thumbnail: algovisual,
+      title: "FinSmart.ai",
+      description: "AI-Powered Finance Platform",
+      technologies: ["Next.js", "Prisma", "Clerk", "Inngest", "Google Generative AI"],
+      link: "https://finsmartai.vercel.app/",
+      thumbnail: Finsmart,
     },
-
   ]
 
   const experiences = [
@@ -97,22 +95,27 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="w-full min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-background to-background/50">
-        <div className="absolute inset-0 w-full h-full bg-grid-white/[0.02] bg-grid-small-white/[0.02]" />
+        {/* Modern animated background */}
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-primary/10 via-background/60 to-secondary/20 animate-gradient-slow z-0" />
+
+        <div className="absolute left-1/4 top-1/3 w-[200px] h-[200px] bg-secondary/30 rounded-full blur-2xl animate-bounce opacity-20" />
+        <div className="absolute right-1/4 bottom-1/4 w-[150px] h-[150px] bg-primary/30 rounded-full blur-2xl animate-bounce-slow opacity-20" />
+
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="flex flex-col items-center text-center space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50 animate-gradient">
-                Hi, I'm Naman Verma
+          <div className="flex flex-col items-center text-center space-y-10 py-12">
+            <div className="space-y-6">
+              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60 animate-gradient">
+                <TypewriterEffect words={[{ text: "Hi, I'm Naman Verma" }, { text: "Full Stack Developer", className: "text-primary" }]} />
               </h1>
-              <p className="max-w-[700px] text-muted-foreground text-lg md:text-xl/relaxed lg:text-2xl/relaxed mx-auto">
-                Computer Engineering student crafting innovative solutions through code.
-                <span className="text-primary font-semibold"> Full Stack Developer</span> specializing in React.js & Next.js
+              <p className="max-w-[700px] text-muted-foreground text-lg md:text-xl/relaxed lg:text-2xl/relaxed mx-auto animate-fade-in delay-300">
+                Computer Engineering student passionate about building innovative solutions through code.<br />
+                <span className="text-primary font-semibold">Full Stack Developer</span> specializing in <span className="text-primary font-semibol">React.js</span> & <span className="text-primary font-semibol">Next.js</span>
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-4 justify-center animate-fade-in delay-500">
               <Link href="/projects">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-lg">
                   View My Work
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -122,31 +125,22 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 shadow-lg">
                   Check Out My Resume
                   <FileText className="ml-2 h-4 w-4" />
                 </Button>
               </a>
             </div>
 
-            <div className="flex items-center justify-center gap-6 mt-8">
+            <div className="flex items-center justify-center gap-6 mt-8 animate-fade-in delay-700">
               <Link href="https://github.com/namanverma001" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="h-6 w-6" />
+                <Github className="h-7 w-7" />
               </Link>
               <Link href="https://www.linkedin.com/in/naman-verma-824baa257/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-7 w-7" />
               </Link>
-              {/* <Link href="https://twitter.com/yourusername" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-6 w-6" />
-              </Link> */}
             </div>
           </div>
-        </div>
-
-        {/* Animated background elements */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="absolute w-[500px] h-[500px] bg-primary/30 rounded-full blur-3xl animate-pulse opacity-20" />
-          <div className="absolute w-[300px] h-[300px] bg-secondary/20 rounded-full blur-2xl animate-pulse delay-300 opacity-20" />
         </div>
       </section>
 
