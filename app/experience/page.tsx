@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Briefcase, Calendar, Download, ExternalLink, MapPin } from "lucide-react"
+import { Briefcase, Calendar, Download, ExternalLink, FileText, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export default function ExperiencePage() {
@@ -75,10 +75,12 @@ export default function ExperiencePage() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">Professional Experience</h1>
             <p className="text-muted-foreground">My journey in the tech industry and professional work</p>
           </div>
-          <Button className="mt-4 sm:mt-0">
-            <Download className="mr-2 h-4 w-4" />
-            Download Resume
-          </Button>
+          <Link href="/resume" passHref legacyBehavior>
+            <Button className="mt-4 sm:mt-0">
+              <FileText className="mr-2 h-4 w-4" />
+              View Resume
+            </Button>
+          </Link>
         </div>
 
         {/* Work Experience Timeline */}
