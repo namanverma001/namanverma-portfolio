@@ -117,12 +117,16 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/contact">
+              <a
+                href="https://drive.google.com/file/d/1V1dZ-eK-hjGsPHNEd1qXdHlhQ9pnH__2/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                  Get in Touch
-                  <Mail className="ml-2 h-4 w-4" />
+                  Check Out My Resume
+                  <FileText className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
+              </a>
             </div>
 
             <div className="flex items-center justify-center gap-6 mt-8">

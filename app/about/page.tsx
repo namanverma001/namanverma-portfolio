@@ -39,7 +39,7 @@ export default function AboutPage() {
                 </Button>
               </Link>
             </div>
-            <Link href="https://drive.google.com/file/d/1HlquOrnr4Oo0Tlu6vQ1uChXHUPkhUriu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <Link href="https://drive.google.com/file/d/1V1dZ-eK-hjGsPHNEd1qXdHlhQ9pnH__2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button className="w-full">
                 <FileText className="mr-2 h-4 w-4" />
                 View Resume
