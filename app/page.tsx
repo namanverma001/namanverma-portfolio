@@ -19,6 +19,7 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
+import { SiLeetcode } from "react-icons/si"
 
 import Finsmart from "@/assets/finsmartai.png"
 import Vheekle from "@/assets/vheekle.png"
@@ -133,14 +134,14 @@ export default function Home() {
             </div>
 
             <div className="flex items-center justify-center gap-6 mt-8 animate-fade-in delay-700">
-              <Link href="https://github.com/namanverma001" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://github.com/namanverma01" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-7 w-7" />
               </Link>
               <Link href="https://www.linkedin.com/in/naman-verma-824baa257/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-7 w-7" />
               </Link>
-              <Link href="https://leetcode.com/u/namanverma001/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Code className="h-7 w-7" />
+              <Link href="https://leetcode.com/u/namanverma001/" className="text-yellow-500 hover:text-yellow-400 transition-colors">
+                <SiLeetcode className="h-7 w-7" />
               </Link>
             </div>
           </div>
