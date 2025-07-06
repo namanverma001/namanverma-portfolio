@@ -139,6 +139,9 @@ export default function Home() {
               <Link href="https://www.linkedin.com/in/naman-verma-824baa257/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-7 w-7" />
               </Link>
+              <Link href="https://leetcode.com/u/namanverma001/" className="text-muted-foreground hover:text-primary transition-colors">
+                <Code className="h-7 w-7" />
+              </Link>
             </div>
           </div>
         </div>
