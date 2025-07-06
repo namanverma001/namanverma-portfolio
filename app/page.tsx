@@ -140,7 +140,7 @@ export default function Home() {
               <Link href="https://www.linkedin.com/in/naman-verma-824baa257/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-7 w-7" />
               </Link>
-              <Link href="https://leetcode.com/u/namanverma001/" className="text-yellow-500 hover:text-yellow-400 transition-colors">
+              <Link href="https://leetcode.com/u/namanverma01/" className="text-yellow-500 hover:text-yellow-400 transition-colors">
                 <SiLeetcode className="h-7 w-7" />
               </Link>
             </div>
