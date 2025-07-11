@@ -134,7 +134,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center justify-center gap-6 mt-8 animate-fade-in delay-700">
-              <Link href="https://github.com/namanverma01" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://github.com/namanverma001" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-7 w-7" />
               </Link>
               <Link href="https://www.linkedin.com/in/naman-verma-824baa257/" className="text-muted-foreground hover:text-primary transition-colors">
