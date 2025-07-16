@@ -61,7 +61,7 @@ export default function Home() {
       location: "Nashik (On-site)",
       period: "Jan 2025 - March 2025",
       description: [
-        "Developed the official website of Company using React.js and Tailwind CSS",
+        "Developed and Deployed a responsive website of Company using React.js and Tailwind CSS",
         "Ensured a responsive, optimized, and visually appealing user interface while collaborating with the team to implement features and enhance website performance",
       ],
       skills: ["React.js", "Tailwind CSS", "Responsive Design", "Web Performance"],
@@ -96,6 +96,9 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="w-full min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-background to-background/50">
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f29376b_1px,transparent_1px),linear-gradient(to_bottom,#1f29376b_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+
         {/* Modern animated background */}
         <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-primary/10 via-background/60 to-secondary/20 animate-gradient-slow z-0" />
 
@@ -106,7 +109,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center space-y-10 py-12">
             <div className="space-y-6">
               <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60 animate-gradient">
-                <TypewriterEffect words={[{ text: "Hi, I'm Naman Verma" }, { text: "Full Stack Developer", className: "text-primary" }]} />
+                <TypewriterEffect words={[{ text: "Hi, I'm Naman Verma" }, { text: "Computer Engineer", className: "text-primary" }, { text: "Full Stack Developer", className: "text-primary" }]} />
               </h1>
               <p className="max-w-[700px] text-muted-foreground text-lg md:text-xl/relaxed lg:text-2xl/relaxed mx-auto animate-fade-in delay-300">
                 Computer Engineering student passionate about building innovative solutions through code.<br />
@@ -143,6 +146,10 @@ export default function Home() {
               <Link href="https://leetcode.com/u/namanverma01/" className="text-yellow-500 hover:text-yellow-400 transition-colors">
                 <SiLeetcode className="h-7 w-7" />
               </Link>
+              <Link href="mailto:namanverma0219@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="h-7 w-7" />
+              </Link>
+
             </div>
           </div>
         </div>
